@@ -55,5 +55,5 @@ Se probó la **API del formulario de contacto** y se validó el correcto almacen
 
 ## 👩‍💻 Autora
 **Anna Moreno – QA Junior**  
-[🔗 LinkedIn](www.linkedin.com/in/anna-moreno-bonell)
+[🔗 LinkedIn](https://www.linkedin.com/in/anna-moreno-bonell)
 
