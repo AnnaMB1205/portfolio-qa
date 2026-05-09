@@ -115,20 +115,30 @@
   <h2 id="titulocontacto">
     <i class="fa fa-envelope"></i> Contact
   </h2>
-  <form id="contactForm" onsubmit="return enviarFormulario(event)">
-    <input id="nombre" type="text" placeholder="Name" />
-    <input id="email" type="email" placeholder="Email" />
-    <select id="subject">
-      <option value="">---</option>
-      <option value="info">Información</option>
-      <option value="job">Oferta Trabajo</option>
-      <option value="other">Otro</option>
-    </select>
-    <textarea id="mensaje" rows="4" placeholder="Write your message"></textarea>
-    <button id="enviar" type="submit">
-      <i class="fa fa-paper-plane"></i> Send
-    </button>
-  </form>
+ <form id="contactForm" onsubmit="return enviarFormulario(event)">
+  <input id="nombre" type="text" placeholder="Name" />
+
+  <input id="email" type="email" placeholder="Email" required />
+
+  <select id="subject" required>
+    <option value="" disabled selected>--- Select a subject ---</option>
+    <option value="info">information</option>
+    <option value="job">Job offer</option>
+    <option value="other">other</option>
+  </select>
+
+  <textarea 
+    id="mensaje" 
+    rows="4" 
+    placeholder="Write your message" 
+    required 
+    maxlength="500"
+  ></textarea>
+
+  <button id="enviar" type="submit">
+    <i class="fa fa-paper-plane"></i> Send
+  </button>
+</form>
   <p id="formMessage"></p>
 </section>
 
