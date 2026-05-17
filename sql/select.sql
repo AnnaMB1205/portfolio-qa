@@ -1,0 +1,10 @@
+SELECT * FROM usuarios;
+SELECT * FROM usuarios WHERE name='Anna';
+SELECT * FROM usuarios WHERE name IS NULL;
+SELECT * FROM usuarios WHERE name ILIKE 'a%';
+SELECT * FROM usuarios WHERE age BETWEEN 20 AND 30;
+SELECT * FROM usuarios WHERE subject IN ('job', 'information');
+SELECT * FROM usuarios WHERE LOWER(name) = 'maria' OR LOWER(name) = 'anna';
+SELECT * FROM usuarios WHERE email LIKE '%gmail%' AND subject = 'job';
+SELECT * FROM usuarios WHERE age > 30 AND message ILIKE '%test%';
+SELECT * FROM usuarios ORDER BY email ASC;
