@@ -1,4 +1,4 @@
-create table formsannamoreno (
+create table usuarios (
   id SERIAL PRIMARY KEY,
   name VARCHAR, 
   email VARCHAR NOT NULL,
