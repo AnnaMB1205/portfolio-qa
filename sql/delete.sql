@@ -1,4 +1,5 @@
-DELETE FROM formsannamoreno 
+DELETE FROM formsannamoreno
 WHERE age = 30;
-DELETE FROM formsannamoreno 
-WHERE LOWER(name) = 'pedro';
+
+DELETE FROM formsannamoreno
+WHERE name = 'pedro';
