@@ -1,8 +1,10 @@
-create table usuarios (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR, 
-  email VARCHAR NOT NULL,
-  subject VARCHAR NOT NULL,
-  age INTEGER CHECK (age > 18),
-  message VARCHAR(500) NOT NULL 
-);
+SELECT * FROM formsannamoreno;
+SELECT * FROM formsannamoreno WHERE name='ana';
+SELECT * FROM formsannamoreno WHERE name IS NULL;
+SELECT * FROM formsannamoreno WHERE name ILIKE 'a%';
+SELECT * FROM formsannamoreno WHERE age BETWEEN 20 AND 30;
+SELECT * FROM formsannamoreno WHERE subject IN ('job', 'information');
+SELECT * FROM formsannamoreno WHERE LOWER(name) = 'maria' OR LOWER(name) = 'ana';
+SELECT * FROM formsannamoreno WHERE email LIKE '%gmail%' AND subject = 'job';
+SELECT * FROM formsannamoreno WHERE age > 30 AND message ILIKE '%test%';
+SELECT * FROM formsannamoreno ORDER BY email ASC;
