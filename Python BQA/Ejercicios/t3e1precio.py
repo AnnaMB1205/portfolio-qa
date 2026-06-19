@@ -21,7 +21,7 @@ def agregar_iva(importe):
 # Datos que introdujo la usuaria
 precio_descontado_total = calcular_precio_descuento(precio_unidad, cantidad_comprar, descuento_aplicar)
 
-print("\n--- RESUMEN CON DESCUENTO ---")
+
 print("Cantidad:", cantidad_comprar)
 print("Producto:", nombre_producto)
 print("Descuento aplicado:", descuento_aplicar, "%")

@@ -1,7 +1,7 @@
 # Pedimos el correo electrónico a la usuaria
 correo = input("Introduce tu dirección de correo electrónico: ")
 
-# Manipulamos la cadena del correo electrónico
+
 longitud_correo = len(correo)
 correo_mayusculas = correo.upper()
 correo_minusculas = correo.lower()
